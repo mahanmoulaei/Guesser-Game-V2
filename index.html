@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Game Page</title>
+            <!--===============================================================================================-->	
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+                <link rel="stylesheet" href="static/css/style.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script type="text/javascript" src="static/js/javascript.js"></script>       
+            <!--===============================================================================================-->
+    </head>
+        <body>
+            <div class="container">
+                <div class="wrap-full p-l-55 p-r-55 p-t-80 p-b-30">
+                    <div>
+                        <h2 class="rainbow rainbow_text_animated">Guessing Game</h2>
+                        <p> The system will generate 5 random numbers <br> Select 5 different numbers between 0 to 12 to guess them </p>
+                    </div>
+                    <div class="form">
+                        <div class="wrap-input m-b-20">
+                            <select class='input' name="val1" id="val1" required></select>
+                        </div>
+                        <div class="wrap-input m-b-20">
+                            <select class='input ' name="val2" id="val2" required></select>
+                        </div>
+                        <div class="wrap-input m-b-20">
+                            <select class='input ' name="val3" id="val3" required></select>
+                            </div>
+                            <div class="wrap-input m-b-20">
+                                <select class='input ' name="val4" id="val4" required></select>
+                            </div>
+                            <div class="wrap-input m-b-20">
+                                <select class='input ' name="val5" id="val5" required></select>
+                            </div>
+                            <br>
+                            <br>
+                        	<div class="container-form-btn">
+								<button class='btn1 m-b-20' id="submit" name="submit" onclick="submit()">Submit</button>
+                                <button class='btn2' id="reset" name="reset" onclick="resetToDefault()">Reset</button>
+							</div>
+                        </div>
+                        <br><b id="generatedNumbers">&nbsp;</b><br>
+                        <br><b id="guessedNumbers">&nbsp;</b><br>
+                        <br><p id="result">&nbsp;</p>
+                    </div>
+                    <div class="footer">
+                        <footer>
+                            <p style="position: fixed; bottom: 0; left:5; width:100%; text-align: left; color: black; font-size: 10;">&copy; Copyright: 2021 by Web Dev Titans - 2022 by Mahan for conversion to JavaScript and GoLang</p>
+                        </footer>
+                    </div>
+                </div>                
+            </div>
+        </body>
+</html>
